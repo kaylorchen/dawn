@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( dawn )
+find_package( OpenCV REQUIRED )
+add_executable( dawn dawn.cpp )
+target_link_libraries( dawn ${OpenCV_LIBS} )
